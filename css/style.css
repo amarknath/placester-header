@@ -1,0 +1,384 @@
+/* ***** COLORS ***** */
+/* ***** MENU WIDTH ***** */
+/* ***** FONTS ***** */
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* ***** PHONE STYLES ***** */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  margin: 0; }
+
+.wrapper {
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center; }
+
+p {
+  color: #444; }
+
+/* HEADER */
+.header {
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 85px;
+  line-height: 89px;
+  max-width: 960px;
+  margin: 0 auto; }
+
+.header img {
+  display: inline-block;
+  width: 165px;
+  float: left;
+  padding: 15px 20px 10px 15px;
+  margin-top: 5px; }
+
+.header-login {
+  float: none;
+  text-align: center; }
+  .header-login button {
+    padding: 0px;
+    margin: 20px 2px 0 2px;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent; }
+  .header-login button a {
+    padding: 10px 15px;
+    background-color: #e6e6e6;
+    font-size: 13px;
+    line-height: 13px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    font-family: "open_sansregular", sans-serif;
+    height: auto;
+    border: none; }
+  .header-login .register {
+    background-color: #0d9637;
+    color: #fff;
+    border: 1px solid #444; }
+  .header-login .register:hover {
+    background-color: #6ec087;
+    border: 1px solid #6ec087; }
+  .header-login button a:hover {
+    background-color: #c6c6c6;
+    cursor: pointer; }
+
+.menu-pusher {
+  transition-duration: 0.4s;
+  transform: translateX(0px);
+  height: 100%; }
+
+.site-content {
+  position: absolute;
+  top: 66px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.header__icon {
+  position: relative;
+  display: block;
+  float: right;
+  width: 50px;
+  height: 66px;
+  cursor: pointer;
+  color: #444; }
+  .header__icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    color: #444;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    box-shadow: 0 10px 0 1px #444, 0 16px 0 1px #444, 0 22px 0 1px #444; }
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #e6e6e6;
+    /*    overflow-y: scroll;
+-webkit-overflow-scrolling: touch;*/
+  width: 250px;
+  transform: translateX(-250px);
+  font-family: "open_sansregular", sans-serif;
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Show the dropdown menu on hover */ }
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #444;
+    text-decoration: none;
+    color: #444;
+    padding: 10px 0; }
+  .menu h3 {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: "open_sansregular", sans-serif;
+    font-size: 35px;
+    margin: 0 0 5px 0;
+    background-color: #0d9637;
+    padding: 30px 0 0 0; }
+  .menu .dropbtn {
+    background-color: transparent;
+    color: #444;
+    font-family: "open_sansbold", sans-serif;
+    padding: 12px 22px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%; }
+  .menu .dropbtn:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 5px solid #0d9637;
+    margin-top: 7px;
+    margin-left: 10px; }
+  .menu .dropdown {
+    position: relative;
+    display: block; }
+  .menu .dropdown-content {
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: #e6e6e6; }
+  .menu .dropdown-content a {
+    color: #444;
+    padding: 5px 15px 5px 25px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .menu .dropdown:hover .dropdown-content {
+    display: block; }
+
+.with--sidebar .menu-pusher {
+  transform: translateX(250px); }
+.with--sidebar .menu-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.header-rule {
+  margin: 0 0 10px 0;
+  height: 1px;
+  color: #444;
+  width: 100%; }
+
+/* HOUSE TILES */
+.tiles {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .tiles h1 {
+    font-family: "open_sansregular", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center; }
+  .tiles div {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 0; }
+  .tiles .home-wrapper {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+    overflow: hidden; }
+  .tiles img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover; }
+  .tiles p {
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box; }
+  .tiles div:last-of-type {
+    margin-bottom: 0; }
+  .tiles div:hover {
+    opacity: .7; }
+
+/* *************************** 
+/* ****** Media Queries ****** 
+/* *************************** 
+/* *************************** 
+/* ****** 400 and wider ****** 
+/* *************************** */
+@media only screen and (min-width: 400px) {
+  .tiles {
+    text-align: center; }
+    .tiles div {
+      width: 400px;
+      overflow: hidden;
+      margin: 20px auto; }
+    .tiles img {
+      width: auto;
+      height: auto;
+      object-fit: none;
+      margin: 0 auto; } }
+/* *************************** 
+/* ****** Media Queries ****** 
+/* *************************** 
+/* *************************** 
+/* ****** 600 and wider ****** 
+/* *************************** */
+@media only screen and (min-width: 600px) {
+  .tiles {
+    text-align: center; }
+    .tiles div {
+      width: 266px;
+      overflow: hidden;
+      margin: 10px 10px;
+      display: inline-block;
+      height: 170px;
+      vertical-align: top; }
+    .tiles img {
+      width: 100%;
+      object-fit: cover; }
+    .tiles div:last-of-type {
+      margin-bottom: 20px; } }
+/* *************************** 
+/* ****** Media Queries ****** 
+/* *************************** 
+/* *************************** 
+/* ****** 768 and wider ****** 
+/* *************************** */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    height: 100%;
+    overflow: visible; }
+
+  .header__icon {
+    display: none; }
+
+  .header-login {
+    position: relative;
+    top: -8px;
+    float: right;
+    text-align: inherit; }
+
+  /* MENU */
+  .menu {
+    position: relative;
+    display: block;
+    z-index: 999;
+    line-height: 94px;
+    transform: none;
+    width: 100%;
+    padding-right: 10px;
+    background-color: transparent;
+    z-index: 1000;
+    /* The container <div> - needed to position the dropdown content */
+    /* Dropdown Content (Hidden by Default) */
+    /* Links inside the dropdown */
+    /* Change color of dropdown links on hover */
+    /* Show the dropdown menu on hover */
+    /* Change the background color of the dropdown button when the dropdown content is shown */ }
+    .menu a {
+      text-align: left;
+      font-family: "open_sansbold", sans-serif;
+      font-size: 14px; }
+    .menu h3 {
+      display: none; }
+    .menu .dropbtn {
+      background-color: transparent;
+      color: #444;
+      font-family: "open_sansbold", sans-serif;
+      padding: 12px 15px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 200px; }
+    .menu .first-btn {
+      width: 175px; }
+    .menu .dropdown {
+      position: relative;
+      display: inline-block;
+      top: -18px; }
+    .menu .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 230px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+    .menu .dropdown-content a {
+      color: #e6e6e6;
+      padding: 5px 15px 5px 25px;
+      text-decoration: none;
+      display: block; }
+    .menu .dropdown-content a:last-of-type {
+      border-bottom: none; }
+    .menu .dropdown-content a:hover {
+      background-color: #0d9637; }
+    .menu .dropdown-content a:last-of-type:hover {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    .menu .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.8); }
+    .menu .dropdown:hover .dropbtn {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #e6e6e6; }
+
+  .tiles {
+    text-align: center; }
+    .tiles div {
+      width: 230px;
+      overflow: hidden;
+      margin: 10px 10px;
+      display: inline-block;
+      height: 170px; }
+    .tiles img {
+      width: 100%;
+      object-fit: cover; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.placester-header-container{
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0; 
+  position: relative;
+}
+
+.placester-header{
+  box-sizing: border-box;
+  height: 100%;
+  height: 85px;
+  left: 0;
+  line-height: 89px;
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  right: 0;
+  text-align: center;
+}
+
+.placester-header-homes-image{
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  padding: 15px 20px 10px 15px;
+  width: 165px;
+}
+
+.placester-header-login{
+  float: none;
+  text-align: center;
+}
+
+.placester-header-login .placester-header-login-button{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  margin: 20px 2px 0 2px;
+  outline: none;
+  padding: 0;
+  padding: 0px;
+}
+
+.placester-header-login .placester-header-login-button > a{
+  background-color: rgb(230,230,230);
+  border-radius: 5px;
+  border: none;
+  color: rgb(0,0,0);
+  font-family: "open_sansregular", sans-serif;
+  font-size: 13px;
+  height: auto;
+  line-height: 13px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.placester-header-login .placester-header-login-button .phl-register {
+  background-color: rgb(13,150,55);
+  border: 1px solid rgb(68,68,68);
+  color: rgb(255,255,255);
+}
+
+.placester-header-login .phl-register:hover {
+    background-color: rgb(110,192,135);
+    border: 1px solid rgb(110,192,135); 
+  }
+
+.placester-header-login .placester-header-login-button .placester-menu-list-link : hover{
+  background-color: rgb(198,198,198);
+  cursor: pointer;
+}
+.placester-menu-pusher{
+  transform: translateX(0px);
+  transition-duration: 0.4s;
+}
+
+.placester-menu-icon {
+  color: rgb(68,68,68);
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 66px;
+  position: relative;
+  width: 50px;
+}
+
+.placester-menu-icon:after {
+  box-shadow: 0 10px 0 1px rgb(68,68,68), 0 16px 0 1px rgb(68,68,68), 0 22px 0 1px rgb(68,68,68);
+  color: rgb(68,68,68);
+  content: '';
+  display: block;
+  height: 0;
+  left: 15px;
+  position: absolute;
+  top: 16px;
+  width: 1rem;
+}
+
+.placester-menu{
+  position: absolute;
+  left: -8px;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(230,230,230);
+  width: 250px;
+  transform: translateX(-250px);
+  font-family: "open_sansregular", sans-serif;
+}
+
+.placester-menu .dropdown-content > a{
+  border-bottom: 1px solid rgb(68,68,68);
+  color: rgb(68,68,68);
+  display: block;
+  line-height: 40px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.placester-menu-heading{
+  background-color: rgb(13,150,55);
+  color: rgb(255,255,255);
+  display: block;
+  font-family: "open_sansregular", sans-serif;
+  font-size: 35px;
+  margin: 0 0 5px 0;
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+.placester-menu .menu-dropbtn{
+  background-color: transparent;
+  border-bottom: 1px solid rgb(68,68,68);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+  color: rgb(68,68,68);
+  cursor: pointer;
+  font-family: "open_sansbold", sans-serif;
+  font-size: 14px;
+  padding: 12px 22px;
+  text-align: left;
+  width: 100%;
+}
+
+.placester-menu .menu-dropbtn:after{
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid rgb(13,150,55);
+  content: " ";
+  height: 0;
+  margin-left: 10px;
+  margin-top: 7px;
+  position: absolute;
+  width: 0;
+}
+
+.placester-menu .menu-dropdown{
+  display: block;
+  position: relative;
+}
+
+.placester-menu .dropdown-content{
+  background-color: rgb(230,230,230);
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.placester-menu .dropdown-content > a {
+  color: rgb(68,68,68);
+  display: block;
+  padding: 5px 15px 5px 25px;
+  text-align: left;
+  text-decoration: none;
+}
+.placester-menu .menu-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.with--sidebar .placester-menu-pusher {
+  transform: translateX(250px); }
+.with--sidebar .placester-menu-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.placester-header-rule {
+  margin: 0 0 10px 0;
+  height: 1px;
+  color: rgb(68,68,68);
+  width: 100%; }
+
+
+@media only screen and (min-width: 768px) {
+  .placester-header{
+    overflow: visible;
+  }
+
+  .placester-menu-icon {
+    display: none;
+  }
+  .placester-header-login{
+    position: relative;
+    top: -8px;
+    float: right;
+    text-align: inherit;
+  }
+  .placester-menu {
+    position: relative;
+    display: block;
+    z-index: 999;
+    line-height: 94px;
+    transform: none;
+    width: 100%;
+    padding-right: 10px;
+    background-color: transparent;
+    z-index: 1000;
+  }
+  .placester-menu .dropdown-content > a{
+    font-family: "open_sansbold", sans-serif;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .placester-menu-heading {
+    display: none;
+  }
+  .placester-menu .first-btn {
+    width: 175px;
+  }
+  .placester-menu .menu-dropbtn {
+    background-color: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    color: rgb(68,68,68);
+    cursor: pointer;
+    font-family: "open_sansbold", sans-serif;
+    font-size: 14px;
+    padding: 12px 15px;
+    text-align: left;
+    width: 200px;
+  }
+
+  .placester-menu .menu-dropdown{
+    display: inline-block;
+    position: relative;
+    top: -18px;
+  }
+
+  .placester-menu .dropdown-content {
+    background-color: rgb(249,249,249);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    min-width: 230px;
+    position: absolute;
+  }
+
+  .placester-menu .dropdown-content > a {
+    color: rgb(230,230,230);
+    padding: 5px 15px 5px 25px;
+    text-decoration: none;
+    display: block; 
+  }
+  .placester-menu .dropdown-content > a:last-of-type {
+    border-bottom: none;
+  }
+  .placester-menu .dropdown-content >a:hover {
+    background-color: rgb(13,150,55);
+  }
+  .placester-menu .dropdown-content > a:last-of-type:hover {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .placester-menu .menu-dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+  .placester-menu .menu-dropdown:hover .menu-dropbtn {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(230,230,230);
+  }
+}
+
