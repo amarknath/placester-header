@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    // var div = document.createElement("div");
-    // div.className ='placester-menu-pusher';
-    // div.appendChild(document.body.childNodes[0]);
-    // div.appendChild(document.body.childNodes[2]);
-    // document.body.insertBefore(div, document.body.childNodes[0]);
     (function($) {
 
         $('#placester-menu-icon').click(function(e) {
