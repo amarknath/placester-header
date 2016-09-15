@@ -243,7 +243,7 @@
   .placester-menu-heading {
     display: none;
   }
-  .placester-menu .first-btn {
+  .placester-menu .menu-dropdown .first-btn {
     width: 175px;
   }
   .placester-menu .menu-dropbtn {
