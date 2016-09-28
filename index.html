@@ -9,7 +9,28 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" type="text/css" href="css/placester_header.css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+    (function($) {
+
+        jQuery('#placester-menu-icon').click(function(e) {
+            e.preventDefault();
+            var menu_pusher=document.getElementById('placester-menu-pusher');
+            var main_content = document.getElementsByClassName('main-content');
+            menu_pusher.appendChild(main_content[0]);
+            menu_pusher.style.height = "100%"
+            jQuery('#placester-header-container').toggleClass('with--sidebar');
+        });
+
+        jQuery('#placester-menu-close').click(function(e) {
+            jQuery('#placester-header-container').removeClass('with--sidebar');
+            document.getElementById('placester-menu-pusher').style.height = "initial";
+            var content=document.getElementById('placester-menu-pusher').lastChild;
+            var post_content = document.getElementsByClassName('pre-ftr-ad');
+            post_content[0].parentNode.insertBefore(content,post_content[0]); 
+        });
+    })(jQuery);
+});
 </head>
 
 <header id="placester-header-container">
