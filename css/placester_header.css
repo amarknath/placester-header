@@ -124,18 +124,18 @@
   color: rgb(255,255,255);
   display: block;
   font-family: "Open Sans", sans-serif;
-  font-size: 35px;
-  margin: 0 0 5px 0;
+  font-size: 35px !important;
+  margin: 0 0 5px 0 !important;
   padding: 30px 0 0 0;
   text-align: center;
 }
 
 .placester-menu .menu-dropbtn{
+  border: none;
   background-color: transparent;
   border-bottom: 1px solid rgb(68,68,68);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border: none;
   color: rgb(68,68,68);
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
@@ -161,6 +161,7 @@
 .placester-menu .menu-dropdown{
   display: block;
   position: relative;
+  top: -18px;
 }
 
 .placester-menu .dropdown-content{
@@ -254,7 +255,7 @@
   .placester-menu .menu-dropdown{
     display: inline-block;
     position: relative;
-    top: -18px;
+    top: -2px;
   }
 
   .placester-menu .dropdown-content {
@@ -264,6 +265,7 @@
     border-top-right-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: none;
+    margin-top: -6px;
     min-width: 230px;
     position: absolute;
   }
